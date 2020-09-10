@@ -1,0 +1,9 @@
+provider "aws" {
+  version = "2.12.0"
+  region  = "ca-central-1"
+}
+
+resource "aws_instance" "helloworld" {
+  ami = "ami-0db10d1bd827c7426"
+  instance_type = "t2.micro"  
+}
